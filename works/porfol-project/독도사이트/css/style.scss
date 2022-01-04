@@ -1,0 +1,789 @@
+@charset "utf-8";
+body {
+  background-image: url(./../images/big02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wrap {
+  width: 1280px;
+  margin: 0 auto;
+
+  header {
+    > .main {
+      position: relative;
+      width: 100%;
+      height: 700px;
+
+      > .logo {
+        width: 120px;
+        padding: 50px 0 0 50px;
+
+        > a {
+          display: block;
+          width: 100%;
+          height: 50px;
+          > img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+
+      > nav {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 960px;
+        height: 50px;
+
+        > .gnb {
+          display: flex;
+          justify-content: space-between;
+
+          > li {
+            width: 104px;
+            height: 50px;
+
+            &:hover > a {
+              color: #1b62bf;
+            }
+            > a {
+              color: white;
+              font-size: 25px;
+              font-weight: 800;
+              line-height: 50px;
+              text-align: center;
+              transition: all 0.6s;
+            }
+          }
+        }
+      }
+
+      > span {
+        position: absolute;
+        left: 333PX;
+        top: 283px;
+        display: block;
+        width: 614px;
+        height: 214px;
+        > img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    > .banner {
+      width: 1280px;
+      height: 487px;
+
+      position: relative;
+      // border: 1px solid black;
+      > ol {
+        position: absolute;
+        left: 167px;
+        top: -56px;
+        display: flex;
+        overflow: hidden; //
+        width: calc(359px + 15px + 583px);
+
+        z-index: 1000;
+        > li {
+          > .s_cont {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 359px;
+            height: 436px;
+            background-color: #14498f;
+            > .tit {
+              padding: 154px 0 5px 34px;
+              font-weight: 800;
+              font-size: 30px;
+
+              &:after {
+                margin-top: 10px;
+                background-color: #fff;
+                display: block;
+                width: 290px;
+                height: 2px;
+                content: '';
+              }
+              > a {
+                color: white;
+              }
+            }
+            > li {
+              &:nth-child(2) {
+                padding-left: 34px;
+                font-weight: 800;
+                font-size: 16px;
+                color: #f2bc8d;
+              }
+              &:nth-child(3) {
+                padding: 40px 0 0 111px;
+                width: 220px;
+                height: 43px;
+                color: white;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: end;
+              }
+            }
+            .button {
+              width: 55px;
+              padding-left: 272px;
+              > a {
+                display: block;
+                height: 30px;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 30px;
+                text-align: center;
+                background-color: #082040;
+              }
+              &:hover > a {
+                background-color: transparent;
+                transition: all 0.6s;
+              }
+            }
+          }
+
+          &:nth-child(1) {
+            display: flex;
+            width: 359px;
+            position: relative;
+          }
+
+          &:nth-child(2) {
+            width: 583px;
+            height: 436px;
+            margin-left: 15px;
+            // border: 1px solid pink;
+          }
+          > .pic {
+            position: absolute;
+            left: 380px;
+            top: 0;
+            width: 1749px;
+            height: 436px;
+
+            > li {
+              float: left;
+              width: 583px;
+              height: 436px;
+
+              > a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-indent: -9999px;
+              }
+              &:nth-child(1) {
+                background-image: url(./../images/카드뉴스.png);
+                background-position: center center;
+              }
+              &:nth-child(2) {
+                background-image: url(./../images/독도공모전.png);
+              }
+              &:nth-child(3) {
+                background-image: url(./../images/독도이모티콘.png);
+              }
+            }
+          }
+        }
+      }
+
+      > p {
+        position: absolute;
+        top: 127px;
+        width: 70px;
+
+        > a {
+          display: block;
+          height: 70px;
+          text-indent: -9999px;
+          background-image: url(./../images/next_prev.png);
+        }
+      }
+      > .prev {
+        left: 82px;
+        &:hover > a {
+          background-position: 0 70px;
+        }
+        > a {
+          background-position: 0 210px;
+        }
+      }
+
+      > .next {
+        right: 71px;
+        &:hover > a {
+          background-position: 0 140px;
+        }
+      }
+    }
+  }
+
+  section {
+    > .add {
+      > .box_3 {
+        position: relative;
+        width: 1280px;
+        height: 300px;
+        margin-bottom: 10px;
+        > ul {
+          width: 100%;
+          display: flex;
+          position: relative;
+          > li {
+            &:hover > div {
+              opacity: 80%;
+              transition: all 0.8s;
+            }
+
+            > a {
+              display: block;
+              color: #fff;
+            }
+
+            > div {
+              opacity: 0;
+              position: absolute;
+              top: 0px;
+
+              color: white;
+              width: 400px;
+              height: 300px;
+              background-color: rgba(0, 0, 0, 0.8); /*까만색(0,0,0) 80% 투명도*/
+
+              border-radius: 30px;
+
+              > h2 {
+                font-size: 24px;
+                font-weight: 800;
+                margin: 50px auto;
+
+                text-align: center;
+              }
+
+              // &:after {
+              //   position: absolute;
+              //   left: -5px;
+              //   top: 150px;
+              //   margin-top: -15px;
+              //   display: block;
+              //   content: '▶';
+              //   color: #1b62bf;
+              //   font-size: 30px;
+              // }
+
+              > ol.cont {
+                margin: 10px 40px 0 40px;
+                > .tit {
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-bottom: 5px;
+                }
+                > li {
+                  &:nth-child(2) {
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+            }
+
+            &:nth-child(1) {
+              > div {
+                left: 0;
+              }
+            }
+
+            &:nth-child(2) {
+              > div {
+                left: 250px;
+              }
+            }
+
+            &:nth-child(3) {
+              > div {
+              }
+            }
+
+            &:nth-child(4) {
+              > div {
+              }
+            }
+
+            &:nth-child(5) {
+              > div {
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .first {
+      width: 1280px;
+      height: 700px;
+      border-top: 2px solid #333;
+      border-bottom: 2px solid #333;
+
+      > .box {
+        width: 1230px;
+        height: 500px;
+        margin-top: 99px;
+        background-color: #082040;
+        position: relative;
+        > h1 {
+          width: 337px;
+          position: absolute;
+          left: 165px;
+          top: -60px;
+          > a {
+            display: block;
+            height: 119px;
+            color: #1b62bf;
+            font-size: 60px;
+            font-weight: 800;
+            line-height: 70px;
+          }
+          &:hover > a {
+            color: black;
+            transition: all 0.6s;
+          }
+        }
+        > .magazine_pic {
+          width: calc(300px + 200px + 200px);
+          > li {
+            width: 200px;
+            position: absolute;
+
+            &:nth-child(1) {
+              width: 300px;
+              height: 400px;
+              top: 121px;
+              left: 170px;
+              background-image: url(./../images/독도매거진.png);
+            }
+            &:nth-child(2) {
+              top: 271px;
+              left: 348px;
+              background-image: url(./../images/독도매거진_small01.png);
+              z-index: 1000;
+            }
+            &:nth-child(3) {
+              top: 271px;
+              left: 470px;
+              background-image: url(./../images/독도매거진_small02.png);
+            }
+            a {
+              display: block;
+              height: 300px;
+              text-indent: -9999px;
+            }
+          }
+        }
+        > .txt {
+          position: absolute;
+          top: 166px;
+          right: 40px;
+          li {
+            margin-bottom: 10px;
+            color: white;
+            text-align: end;
+            &:nth-child(1) {
+              font-weight: 800;
+              font-size: 24px;
+            }
+            &:nth-child(2) {
+              font-size: 16px;
+              font-weight: 600;
+            }
+            &:nth-child(3) {
+              width: 496px;
+              height: 153px;
+              line-height: 20px;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        > .button {
+          width: 55px;
+          position: absolute;
+          right: 42px;
+          top: 426px;
+          > a {
+            display: block;
+            height: 30px;
+            color: white;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            background-color: #1b62bf;
+          }
+          &:hover > a {
+            background-color: transparent;
+            transition: all 0.6s;
+          }
+        }
+
+        > span {
+          z-index: 100;
+          position: absolute;
+          left: 170px;
+          top: 521px;
+          display: block;
+          width: 300px;
+          height: 900px;
+          text-indent: -9999px;
+          background-color: #1b62bf;
+        }
+      }
+    }
+    > .second {
+      width: 1280px;
+      height: 800px;
+      > .box_2 {
+        z-index: 1000;
+        position: relative;
+
+        > h1 {
+          width: 253px;
+          padding-left: 201px;
+          &:hover > a {
+            color: black;
+            transition: all 0.6s;
+          }
+          a {
+            display: block;
+            height: 193px;
+            color: white;
+            font-size: 60px;
+            font-weight: 800;
+            line-height: 60px;
+          }
+        }
+
+        > .button {
+          width: 55px;
+          position: absolute;
+          left: 203px;
+          top: 222px;
+          &:hover > a {
+            background-color: transparent;
+            transition: all 0.6s;
+          }
+          > a {
+            display: block;
+            height: 30px;
+            color: white;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            background-color: #082040;
+          }
+        }
+        > .pic {
+          width: 854px;
+          height: 610px;
+          position: absolute;
+          top: 200px;
+          left: 376px;
+          > li {
+            &:nth-child(1) {
+              > ol {
+                > .big {
+                  background-image: url(./../images/봄.png);
+                }
+                > .small {
+                  background-image: url(./../images/겨울.png);
+                }
+              }
+            }
+            &:nth-child(2) {
+              > ol {
+                > .big {
+                  background-image: url(./../images/여름.png);
+                }
+                > .small {
+                  background-image: url(./../images/가을.png);
+                }
+              }
+            }
+            margin-bottom: 10px;
+            > ol {
+              display: flex;
+              justify-content: space-between;
+              > li {
+                &:hover > a {
+                  background: linear-gradient(
+                    to top left,
+                    #1b62bf,
+                    30%,
+                    transparent
+                  );
+                }
+                > a {
+                  position: relative;
+                  display: block;
+                  color: white;
+                  font-size: 50px;
+                  font-weight: 800;
+                  > p {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 30px;
+                    opacity: 0;
+                  }
+                  &:hover > p {
+                    opacity: 1;
+                    transition: all 0.6s;
+                  }
+                }
+              }
+              > .big {
+                width: 500px;
+                > a {
+                  display: block;
+                  height: 300px;
+                }
+              }
+              > .small {
+                width: 345px;
+                > a {
+                  display: block;
+                  height: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .third {
+      > .box_3 {
+        position: relative;
+        margin-top: 60px;
+        width: 1280px;
+        height: 500px;
+        > .bg_box {
+          display: block;
+          width: 470px;
+          height: 100px;
+          background-color: #1b62bf;
+        }
+        > h2 {
+          position: absolute;
+          left: 260px;
+          top: 40px;
+          &:hover > a {
+            transition: all 0.6s;
+            color: black;
+            > span {
+              color: #1b62bf;
+            }
+          }
+          > a {
+            display: block;
+            color: white;
+            font-size: 60px;
+            font-weight: 800;
+            > span {
+              color: black;
+            }
+          }
+        }
+        > .infomation_box {
+          margin: 20px auto;
+          width: 1030px;
+          height: 300px;
+          > .gnb {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 300px;
+            > li {
+              width: 300px;
+              height: 300px;
+              border-top: 5px;
+              border-bottom: 5px;
+              border-right: 1px;
+              border-left: 1px;
+              border-style: solid;
+              border-color: #082040;
+              &:nth-child(2) {
+                > .lnb {
+                  > .cont {
+                    margin-bottom: 20px;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                > .lnb {
+                  > .cont {
+                    margin-top: 10px;
+                  }
+                }
+              }
+              > .lnb {
+                > li {
+                  width: 260px;
+                  margin: 0 auto;
+                  > a {
+                    display: block;
+                    color: #333;
+                  }
+                  &:hover > a {
+                    text-decoration: underline;
+                  }
+                }
+                > .tit {
+                  height: 30px;
+                  margin: 25px auto 35px;
+                  text-align: center;
+                  font-size: 24px;
+                  font-weight: 800;
+                }
+                > .cont {
+                  font-size: 16px;
+                  font-weight: 500;
+                  margin-bottom: 5px;
+                  > a {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                }
+                > .date {
+                  // display: none;
+                  opacity: 0;
+                  margin-bottom: 9px;
+                  &:hover > a {
+                    opacity: 100%;
+                    transition: all 0.6s;
+                  }
+                }
+                > .circle {
+                  width: 120px;
+                  height: 120px;
+                  > a {
+                    display: block;
+                    height: 120px;
+                    border-radius: 50%;
+                    background-image: url(./../images/sns.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    position: relative;
+    width: 1280px;
+    height: 300px;
+    background-color: #082040;
+    > .first {
+      position: absolute;
+      left: 280px;
+      top: 75px;
+      > ol {
+        display: flex;
+        justify-content: space-between;
+        width: 725px;
+        height: 60px;
+        > .logo {
+          width: 120px;
+          > a {
+            display: block;
+            height: 60px;
+            background-image: url(./../images/logo01.png);
+            text-indent: -9999px;
+            background-repeat: no-repeat;
+          }
+        }
+        li {
+          > a {
+            color: white;
+            font-size: 18px;
+            line-height: 60px;
+            font-weight: 600;
+          }
+          &:hover {
+            > a {
+              color: #1b62bf;
+            }
+          }
+        }
+      }
+      > .icon {
+        display: flex;
+        justify-content: space-between;
+        width: 125px;
+        height: 20px;
+        margin: 20px auto 30px auto;
+        > li {
+          width: 20px;
+          > a {
+            display: block;
+            width: 100%;
+            height: 20px;
+            // background-image: url(./../images/naver_blog_icon.png); // background-repeat: no-repeat; // background-size: contain; // text-indent: -9999px;
+            > i {
+              width: 20px;
+              height: 20px;
+              color: #fff;
+              font-size: 20px;
+            }
+            > .fa-twitter {
+              color: #1b62bf;
+            }
+          }
+          &:nth-child(4) {
+            > a {
+              background-image: url(./../images/naver_blog_icon.png);
+              text-indent: -9999px;
+            }
+          }
+        }
+      }
+      > address {
+        display: flex;
+        justify-content: space-between;
+        width: 725px;
+        height: 30px;
+        > form {
+          > fieldset {
+            border: none;
+            > ul {
+              > li {
+                > select {
+                  color: #fff;
+                  width: 100px;
+                  height: 30px;
+                  border: 1px solid #fff;
+                  background-color: #082040;
+                }
+              }
+            }
+          }
+        }
+        > span {
+          display: block;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

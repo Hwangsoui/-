@@ -1,0 +1,890 @@
+@charset "utf-8";
+
+#wrap {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+header > .gnb {
+  margin: 0;
+}
+/* 로고 */
+header > ul > .logo {
+  width: 200px;
+  background-image: url(./../images/로고.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+header > ul > .logo > a {
+  display: block;
+}
+header > ul > li {
+  margin: 0 30px;
+}
+
+/* 메뉴 */
+header > .gnb {
+  display: flex;
+}
+header > .gnb > li > .lnb {
+  display: flex;
+  margin: 20px auto;
+}
+header > .gnb > li > .lnb > li {
+  width: 200px;
+}
+header > .gnb > li > .lnb > li > a {
+  display: block;
+
+  color: #666666;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+header > .gnb > li > .lnb > li:hover > a {
+  color: black;
+}
+
+/* 로그인 */
+header > .login {
+  display: flex;
+  justify-content: space-around;
+
+  width: 300px;
+  float: right;
+  margin-top: -50px;
+}
+header > .login > li {
+}
+header > .login > li > a {
+  display: block;
+  font-size: 18px;
+}
+header > .login > li > a:before {
+  display: inline-block;
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-image: url(./../images/로그인아이콘.png);
+}
+header > .login > li:nth-child(2) > a:before {
+  background-position: 0 -30px;
+}
+
+/* section */
+/* 1 ------------------------------------------------------- */
+section > .cont_1 {
+  color: white;
+  font-weight: 600;
+  padding: 0 0 100px 0;
+
+  background-image: url(./../images/배너_bg.jpg);
+}
+
+/* 홈>상품소개>초통영 */
+section > .cont_1 > ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+section > .cont_1 > ul > li {
+  font-size: 20px;
+}
+section > .cont_1 > ul > li:after {
+  display: inline-block;
+  content: '>';
+  margin: 0 10px;
+
+  font-size: 20px;
+}
+section > .cont_1 > ul > li:last-child:after {
+  display: none;
+}
+
+/* app 사진 */
+section > .cont_1 {
+  position: relative;
+}
+section > .cont_1 > ol {
+}
+section > .cont_1 > ol > li:nth-child(1) {
+  margin: 20px auto;
+  width: 110px;
+}
+section > .cont_1 > ol > li > p {
+  height: 50px;
+  text-indent: -9999px;
+
+  background-image: url(./../images/logo_app.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* 1-내용 */
+section > .cont_1 > ol {
+  margin: 0 auto;
+  text-align: center;
+}
+section > .cont_1 > ol > li > h2 {
+  display: inline;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  background: linear-gradient(to top, rgb(50, 12, 112) 45%, transparent 10%);
+}
+section > .cont_1 > ol > li > h3 {
+  font-size: 25px;
+}
+
+/* map, kids 사진 */
+section > .cont_1 > ol > .frame {
+  width: 730px;
+  margin: 30px auto;
+  text-indent: -9999px;
+}
+section > .cont_1 > ol > .frame > p {
+  height: 410px;
+  background-image: url(./../images/배너지도.jpg);
+}
+section > .cont_1 > ol > .frame > span {
+  display: block;
+  width: 430px;
+  height: 700px;
+
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+
+  background-image: url(./../images/배너사진-아기.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 2------------------------------------------------------------------ */
+section > .cont_2 {
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+}
+section > .cont_2 > div {
+  margin: 50px auto;
+
+  background-color: rgb(255, 255, 255);
+}
+
+/* 내용 */
+section > .cont_2 > div > ol > li {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+section > .cont_2 > div > ol > li > h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+section > .cont_2 > div > ol > li > h3 {
+  font-size: 25px;
+}
+/* 사진, 숫자, 점, 내용 */
+section > .cont_2 > div > ul {
+}
+section > .cont_2 > div > ul > li {
+}
+section > .cont_2 > div > ul > li > ol {
+  display: flex;
+
+  width: 50%;
+  margin: 20px auto;
+
+  border-bottom: 1px solid #ccc;
+}
+section > .cont_2 > div > ul > li:last-child > ol {
+  border: none;
+}
+
+section > .cont_2 > div > ul > li > ol > li {
+  margin-right: 100px;
+}
+
+section > .cont_2 > div > ul > li > ol > li:nth-child(1) {
+  margin-top: 10%;
+  order: 1000;
+}
+section > .cont_2 > div > ul > li > ol > li:nth-child(2) {
+  order: 100;
+}
+
+section > .cont_2 > div > ul > li > ol > li > h4 {
+  font-size: 100px;
+  color: #e6e6e6;
+  font-weight: 300;
+}
+section > .cont_2 > div > ul > li > ol > li > h4::after {
+  display: inline-block;
+  content: '.';
+
+  color: #f7e136;
+  font-size: 100px;
+}
+
+section > .cont_2 > div > ul > li > ol > li > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+section > .cont_2 > div > ul > li > ol > .frame {
+  width: 400px;
+  height: 400px;
+  text-indent: -9999px;
+}
+
+section > .cont_2 > div > ul > li > ol > .frame > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-position: center center;
+  background-size: cover;
+}
+
+section > .cont_2 > div > ul > li:nth-child(1) > ol > .frame > span {
+  background-image: url(./../images/본문내용사진03-1.jpg);
+}
+section > .cont_2 > div > ul > li:nth-child(2) > ol > .frame > span {
+  background-image: url(./../images/본문내용사진03-2.jpg);
+}
+section > .cont_2 > div > ul > li:nth-child(3) > ol > .frame > span {
+  background-image: url(./../images/본문내용사진03-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* 3----------------------------------------------------- */
+section > .cont_2:nth-child(3) {
+  background-color: #704499;
+}
+section > .cont_2:nth-child(3) > div {
+  background-color: transparent;
+
+  margin: 0 auto;
+}
+
+/* h2,h3 */
+section > .cont_2:nth-child(3) > div > ol > li {
+  padding-top: 50px;
+  color: white;
+}
+section > .cont_2:nth-child(3) > div > ol > li > p {
+  margin-bottom: 20px;
+  color: yellow;
+  font-size: 25px;
+}
+section > .cont_2:nth-child(3) > div > ol > li > h2::after {
+  display: block;
+  width: 20px;
+  margin: 20px auto;
+
+  content: '';
+
+  border-bottom: 3px solid white;
+}
+/* 사진 */
+section > .cont_2:nth-child(3) > div > ol > li:nth-child(2) {
+  width: 800px;
+  height: 400px;
+
+  margin: 0 auto;
+}
+section > .cont_2:nth-child(3) > div > ol > li > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+
+  background-image: url(./../images/본문내용사진04.jpg);
+  background-size: cover;
+}
+
+/* 4------------------------------------------------------- */
+/* 사진 */
+section > .cont_2:nth-child(4) {
+  background-color: #fff;
+}
+section > .cont_2:nth-child(4) > div > ol > li:nth-child(2) {
+  width: 940px;
+  height: 1000px;
+  margin: 0 auto;
+}
+section > .cont_2:nth-child(4) > div > ol > li:nth-child(2) > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+
+  background-image: url(./../images/본문내용사진01.jpg);
+}
+
+/* 5------------------------------------------------------------- */
+section > .cont_2:nth-child(5) {
+  background-color: #333333;
+}
+section > .cont_2:nth-child(5) > div {
+  background-color: transparent;
+  color: white;
+}
+
+/* h2 언더바, 노란색글 */
+section > .cont_2:nth-child(5) > div > ol > li > h2:after {
+  display: block;
+  width: 20px;
+  margin: 20px auto;
+
+  content: '';
+
+  border-bottom: 3px solid white;
+}
+section > .cont_2:nth-child(5) > div > ol > li > h3 {
+  margin-bottom: 20px;
+}
+section > .cont_2:nth-child(5) > div > ol > li > h3 > span {
+  color: yellow;
+}
+
+/* 사진 */
+section > .cont_2:nth-child(5) > div > ol > li > p {
+  width: 900px;
+  height: 250px;
+  text-indent: -9999px;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(1) {
+  background-image: url(./../images/cont_5.01.jpg);
+}
+section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(2) {
+  background-image: url(./../images/cont_5.02.jpg);
+}
+section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(3) {
+  background-image: url(./../images/cont_5.03.jpg);
+}
+section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(4) {
+  background-image: url(./../images/cont_5.04.jpg);
+}
+section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(5) {
+  background-image: url(./../images/cont_5.05.jpg);
+}
+
+/* 6---------------------------------------------------------- */
+section > .cont_2:nth-child(6) {
+  background-color: #f5f5f5;
+}
+section > .cont_2:nth-child(6) > div {
+  background-color: transparent;
+}
+/* 사진 */
+section > .cont_2:nth-child(6) > div > ol > li:nth-child(2) {
+  width: 930px;
+  height: 770px;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+section > .cont_2:nth-child(6) > div > ol > li > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/본문내용사진02.jpg);
+}
+
+/* footer --------------------------------------------*/
+footer {
+  color: #696969;
+  background-color: #333333;
+  padding: 100px;
+
+  font-size: 16px;
+}
+
+/* 회사소개-이용약관-~평일9시// */
+footer > ul {
+  display: flex;
+
+  width: 60%;
+}
+footer > ul > li {
+}
+footer > ul > .intro {
+  font-weight: 600;
+}
+
+footer > ul > .intro > ol {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 90%;
+}
+footer > ul > li:nth-child(2) {
+  margin-left: -80px;
+}
+footer > ul > .intro > ol > li {
+  color: white;
+  margin-right: 20px;
+}
+
+footer > ul > .intro > ol > .on > a {
+  color: yellow;
+}
+footer > ul > .intro > ol > li > a {
+  display: block;
+  color: white;
+}
+footer > ul > .intro > ol > li {
+  margin-bottom: 15px;
+}
+/* 옆 선 */
+footer > ul > .intro > ol > li > a:after {
+  display: inline-block;
+  margin-left: 10px;
+  content: '|';
+
+  font-size: 15px;
+}
+footer > ul > .intro > ol > li:last-child > a:after {
+  display: none;
+}
+/* 주소 */
+footer > address {
+  margin-top: 20px;
+}
+footer > address > ul {
+  display: flex;
+  flex-flow: wrap;
+
+  width: 60%;
+}
+
+/* 옆선 */
+footer > address > ul > li:after {
+  display: inline-block;
+  margin: 0 10px;
+  content: '|';
+
+  font-size: 15px;
+}
+
+footer > address > ul > li:nth-child(4):after,
+footer > address > ul > li:nth-child(6):after {
+  display: none;
+}
+
+/*kb로고, 선택창 */
+footer > ol {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -100px;
+}
+footer > ol > .logo {
+  width: 75px;
+}
+footer > ol > .logo > a {
+  display: block;
+  height: 75px;
+  text-indent: -9999px;
+
+  background-image: url(./../images/kb.png);
+}
+/* 선택창 */
+footer > ol {
+}
+footer > ol > li > form {
+}
+footer > ol > li > form > fieldset > legend {
+  display: none;
+}
+footer > ol > li > form > fieldset {
+  border: none;
+}
+footer > ol > li > form > ul {
+}
+footer > ol > li > form > ul > li {
+  color: white;
+}
+footer > ol > li > form > fieldset > ul > li > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 40px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  background-color: #2b2b2b;
+}
+
+footer > ol > li > form > fieldset > ul > li:after {
+  content: '﹀';
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: -22px;
+}
+
+/* -------------------------------------------------------- */
+@media screen and (max-width: 665px) {
+  #wrap {
+    width: 100%;
+  }
+
+  header {
+    box-shadow: none;
+  }
+
+  /* bar */
+  header > .bar > li {
+    width: 35px;
+
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+  header > .bar > li > a {
+    display: block;
+    height: 50px;
+
+    background-image: url(./../images/icon_menu.png);
+  }
+
+  header > .gnb {
+    display: initial;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header > ul > .logo {
+    width: 200px;
+    background-position: 50% 0;
+  }
+  header > ul > .logo > a {
+    display: block;
+    height: 50px;
+  }
+  header > ul > li {
+    margin: 10px auto;
+  }
+
+  /* 메뉴 */
+  header > .gnb > li > .lnb {
+    display: none;
+    margin: 0;
+  }
+
+  /* 로그인 */
+  header > .login {
+    display: none;
+  }
+
+  /* section--------------------------------------------- */
+  /* ------------1----------------------------- */
+  section {
+    width: 100%;
+  }
+  section > .cont_1 {
+    width: 100%;
+  }
+  /* 홈>상품소개>초통영 */
+  section > .cont_1 > ul {
+  }
+  section > .cont_1 > ul > li {
+    font-size: 15px;
+  }
+  section > .cont_1 > ul > li:after {
+    font-size: 15px;
+  }
+  /* app 사진 */
+  section > .cont_1 {
+  }
+  section > .cont_1 > ol {
+  }
+  section > .cont_1 > ol > li:nth-child(1) {
+    margin: 0 auto 10px auto;
+  }
+  section > .cont_1 > ol > li > p {
+  }
+
+  /* 1-내용 */
+  section > .cont_1 > ol {
+  }
+  section > .cont_1 > ol > li > h2 {
+    font-size: 30px;
+  }
+  section > .cont_1 > ol > li > h3 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  /* map, kids 사진 */
+  section > .cont_1 > ol > .frame {
+    width: 90%;
+  }
+  section > .cont_1 > ol > .frame > p {
+    height: 300px;
+    background-size: cover;
+    border: 10px solid white;
+  }
+  section > .cont_1 > ol > .frame > span {
+    display: none;
+  }
+
+  /* -----------------2---------------------------------------------------- */
+  section > .cont_2 {
+    width: 100%;
+  }
+  section > .cont_2 > div {
+    width: 90%;
+  }
+
+  /* 내용 */
+  section > .cont_2 > div > ol > li {
+  }
+
+  section > .cont_2 > div > ol > li > h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  section > .cont_2 > div > ol > li > h3 {
+    font-size: 15px;
+  }
+  /* 사진, 숫자, 점, 내용 */
+  section > .cont_2 > div > ul {
+    margin-left: 100px;
+  }
+  section > .cont_2 > div > ul > li {
+  }
+  section > .cont_2 > div > ul > li > ol {
+    display: initial;
+    text-align: center;
+
+    width: 100%;
+
+    border-bottom: 1px solid #ccc;
+  }
+  section > .cont_2 > div > ul > li:last-child > ol {
+  }
+
+  section > .cont_2 > div > ul > li > ol > li {
+    margin-right: 0 auto;
+  }
+
+  section > .cont_2 > div > ul > li > ol > li:nth-child(1) {
+    margin-top: 0 auto;
+  }
+  section > .cont_2 > div > ul > li > ol > li:nth-child(2) {
+  }
+
+  section > .cont_2 > div > ul > li > ol > li > h4 {
+    font-size: 70px;
+  }
+  section > .cont_2 > div > ul > li > ol > li > h4::after {
+    font-size: 70px;
+  }
+
+  section > .cont_2 > div > ul > li > ol > li > p {
+  }
+
+  section > .cont_2 > div > ul > li > ol > .frame {
+  }
+
+  section > .cont_2 > div > ul > li > ol > .frame > span {
+    margin: 0 auto;
+  }
+  /* 3----------------------------------------------------- */
+  section > .cont_2:nth-child(3) {
+    background-color: #704499;
+  }
+  section > .cont_2:nth-child(3) > div {
+    background-color: transparent;
+
+    margin: 0 auto;
+  }
+
+  /* h2,h3 */
+  section > .cont_2:nth-child(3) > div > ol > li {
+    padding-top: 50px;
+    color: white;
+  }
+  section > .cont_2:nth-child(3) > div > ol > li > p {
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: 25px;
+  }
+  section > .cont_2:nth-child(3) > div > ol > li > h2::after {
+    display: block;
+    width: 20px;
+    margin: 20px auto;
+
+    content: '';
+
+    border-bottom: 3px solid white;
+  }
+  /* 사진 */
+  section > .cont_2:nth-child(3) > div > ol > li:nth-child(2) {
+    width: 100%;
+    height: 300px;
+
+    margin: 0;
+  }
+  section > .cont_2:nth-child(3) > div > ol > li > span {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* 4------------------------------------------------------- */
+  /* 사진 */
+  section > .cont_2:nth-child(4) {
+  }
+  section > .cont_2:nth-child(4) > div > ol > li:nth-child(2) {
+    width: 100%;
+  }
+  section > .cont_2:nth-child(4) > div > ol > li:nth-child(2) > span {
+    background-image: url(./../images/본문내용사진01-모바일.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /* 5------------------------------------------------------------- */
+  section > .cont_2:nth-child(5) {
+  }
+  section > .cont_2:nth-child(5) > div {
+  }
+
+  /* h2 언더바, 노란색글 */
+
+  /* 사진 */
+  section > .cont_2:nth-child(5) > div > ol > li > p {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(1) {
+    background-image: url(./../images/cont_5.01모바일.jpg);
+  }
+  section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(2) {
+    background-image: url(./../images/cont_5.02모바일.jpg);
+  }
+  section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(3) {
+    background-image: url(./../images/cont_5.03모바일.jpg);
+  }
+  section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(4) {
+    background-image: url(./../images/cont_5.04모바일.jpg);
+  }
+  section > .cont_2:nth-child(5) > div > ol > li > p:nth-child(5) {
+    background-image: url(./../images/cont_5.05-모바일.jpg);
+    height: 550px;
+    background-size: cover;
+  }
+  /* 6---------------------------------------------------------- */
+  section > .cont_2:nth-child(6) {
+  }
+  section > .cont_2:nth-child(6) > div {
+  }
+  /* 사진 */
+  section > .cont_2:nth-child(6) > div > ol > li:nth-child(2) {
+    width: 100%;
+    height: 1100px;
+  }
+  section > .cont_2:nth-child(6) > div > ol > li > span {
+    background-image: url(./../images/본문내용사진02-모바일.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  /* footer --------------------------------------------*/
+  footer {
+    width: 90%;
+    padding: 30px;
+
+    font-size: 15px;
+  }
+
+  /* 회사소개-이용약관-~평일9시// */
+  footer > ul {
+    display: initial;
+    width: 100%;
+  }
+  footer > ul > li {
+  }
+  footer > ul > .intro {
+  }
+
+  footer > ul > .intro > ol {
+  }
+  footer > ul > li:nth-child(2) {
+    margin-left: 0;
+  }
+  footer > ul > .intro > ol > li {
+  }
+
+  footer > ul > .intro > ol > .on > a {
+  }
+  footer > ul > .intro > ol > li > a {
+    color: white;
+  }
+  footer > ul > .intro > ol > li {
+  }
+  /* 옆 선 */
+  footer > ul > .intro > ol > li > a:after {
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  /* 주소 */
+  footer > address {
+    margin-top: 20px;
+  }
+  footer > address > ul {
+    display: flex;
+    flex-flow: wrap;
+
+    width: 70%;
+  }
+
+  /* 옆선 */
+  footer > address > ul > li:after {
+  }
+
+  footer > address > ul > li:nth-child(1):after,
+  footer > address > ul > li:nth-child(4):after,
+  footer > address > ul > li:nth-child(5):after,
+  footer > address > ul > li:nth-child(6):after {
+    display: none;
+  }
+
+  /*kb로고, 선택창 */
+  footer > ol {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  footer > ol > .logo {
+  }
+  footer > ol > .logo > a {
+  }
+  /* 선택창 */
+  footer > ol {
+    width: 80%;
+  }
+}

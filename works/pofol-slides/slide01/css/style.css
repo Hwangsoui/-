@@ -1,0 +1,84 @@
+@charset "utf-8";
+#wrap {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header > h1 {
+  margin: 30px auto;
+
+  color: #ffa500;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+}
+
+header > h1 > span {
+  color: #ff4800;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  height: 420px;
+  margin: 0 auto;
+  background-image: url(./../images/face.jpg);
+}
+
+#slides > .slides-container {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: calc(250px * 5);
+}
+
+#slides > .slides-container > li {
+  overflow: hidden;
+  width: 250px;
+  height: 400px;
+}
+
+#slides > .slides-container > li > img {
+  display: block;
+  width: 100%;
+}
+
+#slides > .slides-pagination {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 67px;
+
+  margin-left: -34px;
+}
+
+#slides > .slides-pagination > li {
+  width: 13px;
+  background-image: url(./../images/pagination.png);
+}
+
+#slides > .slides-pagination > li.on,
+#slides > .slides-pagination > li.on:hover {
+  background-position: 0 -13px;
+}
+
+#slides > .slides-pagination > li:hover {
+  background-position: 0 -13px;
+}
+
+#slides > .slides-pagination > li > a {
+  display: block;
+  height: 13px;
+  text-indent: -9999px;
+}
+
+footer > address {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
